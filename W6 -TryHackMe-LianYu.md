@@ -5,6 +5,7 @@ Start by scanning the target machine's IP address to identify open ports and ser
 Run nmap -sS -sV -A  10.49.166.253 to discover active services. 
 
 Ports open: 
+
 •	21 (FTP) 
 
 •	22 (SSH) 
@@ -60,6 +61,7 @@ Opening green_arrow.ticket provided a Base58 encoded string: RTy8yhBQdscX.
 After obtain username and password, I log in to FTP and connect to the target IP using the credentials:
 
 The usename and password is:
+
 •	Username: vigilante 
 
 •	Password: !#th3h00d
@@ -86,9 +88,11 @@ Hex editor analysis showed an incorrect PNG header. After correcting the magic b
 
 
 The file aa.jpg contained an embedded zip file.
+
 •	Extraction: steghide extract -sf aa.jpg
 
 •	Passphrase: password (found from the fixed PNG).
+
 •	Extracted Files: passwd.txt and shado.
 
 •	SSH Password: Reading the shado file provided the password: M3tahuman.
@@ -97,11 +101,13 @@ The file aa.jpg contained an embedded zip file.
 <img width="939" height="299" alt="image" src="https://github.com/user-attachments/assets/66f47450-e79d-4324-814d-324af0be7937" />
 
 I used the credentials for the user slade to log in via SSH:
+
 •	Command: ssh slade@10.49.166.253
 
 •	Password: M3tahuman
 
 •	User Flag: Found in user.txt.
+
 o	THM{P30P7E_K33P_53CRET5__C0MPUT3R5_D0N'T}
 <img width="939" height="438" alt="image" src="https://github.com/user-attachments/assets/46157783-cc6e-4894-8a3d-ad75f1d17213" />
 <img width="940" height="314" alt="image" src="https://github.com/user-attachments/assets/fcb86d00-a20a-4890-98b8-f991883a61ab" />
