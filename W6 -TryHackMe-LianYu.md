@@ -1,4 +1,5 @@
 1. Reconnaissance & Enumeration
+
 Start by scanning the target machine's IP address to identify open ports and services:
 Run nmap -sS -sV -A  10.49.166.253 to discover active services. 
 Ports open: 
