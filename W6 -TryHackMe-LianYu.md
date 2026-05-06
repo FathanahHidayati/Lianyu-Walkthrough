@@ -6,7 +6,9 @@ Run nmap -sS -sV -A  10.49.166.253 to discover active services.
 
 Ports open: 
 •	21 (FTP) 
+
 •	22 (SSH) 
+
 •	80 (HTTP)
 
 Search http://10.49.166.253
@@ -59,6 +61,7 @@ After obtain username and password, I log in to FTP and connect to the target IP
 
 The usename and password is:
 •	Username: vigilante 
+
 •	Password: !#th3h00d
 <img width="940" height="190" alt="image" src="https://github.com/user-attachments/assets/078768e3-358c-4755-975c-b079a60b38fc" />
 
