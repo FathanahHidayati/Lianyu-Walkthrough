@@ -16,6 +16,7 @@ Search http://10.49.166.253
 
 <img width="952" height="324" alt="image" src="https://github.com/user-attachments/assets/b77aa552-1e89-4dae-b978-70fb66403b2d" />
 
+
 Running ffuf -u http://10.48.137.141/FUZZ -w /usr/share/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt  and I find a word island.
 
 <img width="940" height="34" alt="image" src="https://github.com/user-attachments/assets/6980a781-2133-4462-a29b-cada050e38ec" />
